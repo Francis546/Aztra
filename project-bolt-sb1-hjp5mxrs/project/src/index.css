@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bitfinex-dark text-white min-h-screen;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-bitfinex-blue hover:bg-bitfinex-light-blue text-white font-medium py-2 px-4 rounded transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply border border-bitfinex-blue text-bitfinex-blue hover:bg-bitfinex-blue/10 font-medium py-2 px-4 rounded transition-all duration-200;
+  }
+
+  .btn-danger {
+    @apply bg-bitfinex-red hover:bg-red-600 text-white font-medium py-2 px-4 rounded transition-all duration-200;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .nav-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-200;
+  }
+  
+  .nav-link-active {
+    @apply text-white font-medium;
+  }
+  
+  .input-field {
+    @apply bg-bitfinex-gray border border-bitfinex-light-gray rounded p-2 text-white w-full focus:outline-none focus:ring-2 focus:ring-bitfinex-blue;
+  }
+}
